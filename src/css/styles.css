@@ -1,0 +1,11 @@
+body {
+  color: white;
+  background-color: black;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+header {
+  padding: 1rem;
+  background-color: darkgray;
+}
