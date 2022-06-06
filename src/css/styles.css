@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -16,6 +20,7 @@ nav {
 .navbar-logo {
   max-width: 250px;
 }
+
 .F1Logo {
   color: white;
   letter-spacing: 5px;
@@ -41,30 +46,38 @@ nav {
   list-style: none;
 }
 
-.footer *{
-	margin:0;
-	padding:100;
-	box-sizing: border-box;
+#container {
+  min-height: 100%;
 }
 
-.nav-links {
+#main {
+  overflow: auto;
+  padding-bottom: 100px;
+}
+
+#footer {
+  background-color: rgb(225,6,0);
+  position: relative;
+  height: 150px;
+  margin-top: -100px;
+  clear: both;
   display: flex;
-  background-color: white;
   justify-content: space-around;
-  width: 45%;
+  width: 100%;
 }
 
-.nav-links a{
-  color: black;
+.footer-links a{
+  color: white;
   text-decoration: none;
   letter-spacing: 5px;
   font-weight: 600;
   font-size: 20px;
 }
 
-.nav-links li{
+.footer-links {
   list-style: none;
 }
+
 
 /* body {
   color: white;
