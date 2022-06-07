@@ -1,6 +1,6 @@
-export default class Formula1Stats {  
+export default class ConstructorStandings {  
   static getStats() {
-    return fetch(`https://api.sportradar.us/formula1/trial/v2/en/sport_events/sr:stage:937183/summary.json?api_key=${process.env.API_KEY}`)
+    return fetch(`http://ergast.com/api/f1/current/constructorStandings.json?`)
       .then(function(response) {
         if (!response.ok) {
           throw Error(response.status);
