@@ -8,6 +8,5 @@ $(document).ready(function(){
   ConstructorStandings.getStats()
     .then(function(response){
       console.log(response);
-      sessionStorage.setItem(response);
     });
 });
