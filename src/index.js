@@ -8,6 +8,5 @@ $(document).ready(function(){
   Formula1Stats.getStats()
     .then(function(response){
       console.log(response);
-      sessionStorage.setItem(response);
     });
 });
