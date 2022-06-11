@@ -78,15 +78,33 @@ nav {
   list-style: none;
 }
 
+.box-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20 15;
+  margin-top: 50px;
+  gap: 20px;
+}
 
-/* body {
-  color: white;
-  background-color: black;
-  margin: 1rem;
-  padding: 1rem;
-} */
+.leader {
+  height: 80vh;
+  width: 40%;
+  border: 20px solid rgb(225,6,0);
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
 
-/* header {
-  padding: 1rem;
-  background-color: darkgray;
-} */
+.table-place {
+  flex-grow: 2;
+  border: 20px solid rgb(225,6,0);
+  height: 80vh;
+  margin-right: 15px;
+}
+
+.width-100 {
+  width: 100vw;
+}
+
+
