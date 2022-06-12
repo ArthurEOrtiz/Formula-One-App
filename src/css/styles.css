@@ -196,3 +196,7 @@ nav {
   margin-left: 5%;
   margin-top: 5%;
 }
+
+.schedule-list li {
+  font-size: 19px;
+}
