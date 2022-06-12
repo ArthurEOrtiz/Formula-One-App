@@ -111,6 +111,20 @@ nav {
   letter-spacing: 5px;
 }
 
+.results-header {
+  background-color: rgb(225,6,0);
+  position: relative;
+  height: 85px;
+  margin-top: -10px;
+  clear: both;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 35px;
+  color: white;
+  letter-spacing: 5px;
+}
+
 .table-place {
   flex-grow: 2;
   border: 20px solid rgb(225,6,0);
@@ -135,7 +149,7 @@ nav {
   flex-direction: column;
 }
 .test-image {
-  display: flex;
+ margin-left: 120px; 
 }
 
 .leader-stats p {
@@ -152,7 +166,7 @@ nav {
  
 .table-place li {
   margin-left: 25px;
-  margin: 15px;
+  margin: 12px;
   font-size: 20px;
 }
 
