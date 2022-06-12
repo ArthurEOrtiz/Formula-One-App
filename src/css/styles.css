@@ -109,4 +109,31 @@ nav {
   width: 100vw;
 }
 
+.leader-stats {
+  height: 80vh;
+  width: 80%;
+  border: 10px solid rgb(225,6,0);
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
 
+.leader-stats p {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.table-place ol {
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-top: 
+}
+ 
+.table-place li {
+  margin: 15px;
+}
