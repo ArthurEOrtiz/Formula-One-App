@@ -24,7 +24,7 @@ nav {
 .F1Logo {
   color: white;
   letter-spacing: 5px;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .nav-links {
@@ -32,6 +32,7 @@ nav {
   background-color: white;
   justify-content: space-around;
   width: 45%;
+  border-radius: 5px;
 }
 
 .nav-links a{
