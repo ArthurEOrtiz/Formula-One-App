@@ -149,9 +149,6 @@ nav {
   display: flex;
   flex-direction: column;
 }
-.test-image {
- margin-left: 120px; 
-}
 
 .leader-stats p {
   margin-top: 15px;
@@ -176,3 +173,13 @@ nav {
   font-size: larger;
 }
 
+.constructors-image {
+  margin-left:  10%;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+
+.driver-image {
+  margin-left: 15%;
+
+}

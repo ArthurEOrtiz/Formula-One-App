@@ -14,11 +14,20 @@ module.exports = {
     contentBase: './dist'
   },
   plugins: [
-    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'placeholder',
-      template: './src/constructors.html',
-      inject: 'body'
+      filename: 'index.html',
+      template: 'src/index.html',
+      chunks: ['main']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'constructors.html',
+      template: 'src/constructors.html',
+      chunks: ['main']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'schedule.html',
+      template: 'src/schedule.html',
+      chunks: ['main']
     }),
     new Dotenv()
   ],
