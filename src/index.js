@@ -34,7 +34,17 @@ $(document).ready(function(){
       }
 
       $("#constructorStandings").html(constructorStandingsHTML);
-      console.log(constructorStandingsHTML);
 
+    });
+
+  Schedule.getNextRound()
+    .then(function(response){
+      const nextRoundObject = response;
+      sessionStorage.setItem("nextRoundObject", JSON.stringify(nextRoundObject));
+      const nextRound = JSON.parse(sessionStorage.getItem("nextRoundObject")).MRData.RaceTable.Races[0];
+      const nextRoundHTML = `<p>${nextRound.Circuit.circuitName}</p> <p>${nextRound.date}</p> <p>${nextRound.time}</p>`;
+      
+      $("#nextRound").html(nextRoundHTML);
+      console.log(nextRoundHTML);
     });
 });
