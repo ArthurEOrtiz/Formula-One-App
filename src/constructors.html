@@ -2,6 +2,9 @@
 <html lang="en-US">
   <head>
     <title>Forumula1 Tracker</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -17,25 +20,34 @@
         <h2>Formula One Tracker</h2>
       </div>
       <ul class="nav-links">
-        <li><a href="#">Drivers Results</a></li>
-        <li><a href="constructors.html">Constructors Results</a></li>
-        <li><a href=></a>Schedule</a></li>
+        <li><a href="index.html">Drivers</a></li>
+        <li><a href="constructors.html">Constructors</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
       </ul>
     </nav>
     <div id="container">
       <div class="box-content">
         <div class="leader">
-          <h1>Leader (Champ/Driver)</h1>
-          <div class="leader-picture">
-            <img class="test-image" src=https://a.espncdn.com/i/headshots/rpm/players/full/4665.png>
+          <div class="leader-header">
+            2022 Constructors Leader
           </div>
-          <div class="leader-stats"></div>
+          <div class="leader-picture">
+            <img class="constructors-image" src="img/drivers/F1-cars/RedBull2.png">
+          </div>
+          <div class="leader-stats">
+            <p>These are the statistics about the lead constructor.</p>
+          </div>
           <div class="spotify"></div>
         </div>
         <div class="table-place">
-          <h1>Table of Results</h1>
+          <div class="results-header">
+            2022 Constructor Results
+          </div>
           <!-- Research Datatables for dynamic rendering of data https://datatables.net/manual/installation -->
           <!-- If datatables is too hard switch to native html tables; if you do this route you will need to foreach the data and have it render an li element for each piece of data -->
+          <ol id="constructorStandings">
+          </ol>
+          </div>
         </div>
       </div>
 
@@ -43,7 +55,7 @@
     <footer id="footer">
       <div class="footer-links">
         <li>
-          <a href="#"><i class="fa-brands fa-github"></i>Link to repository</a>
+          <a href="https://github.com/ArthurEOrtiz/Formula-One-App.git"><i class="fa-brands fa-github"></i>Link to repository</a>
         </li>
         <li>
           <a href="#"

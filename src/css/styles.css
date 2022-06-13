@@ -24,7 +24,7 @@ nav {
 .F1Logo {
   color: white;
   letter-spacing: 5px;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .nav-links {
@@ -32,6 +32,7 @@ nav {
   background-color: white;
   justify-content: space-around;
   width: 45%;
+  border-radius: 5px;
 }
 
 .nav-links a{
@@ -101,7 +102,7 @@ nav {
   background-color: rgb(225,6,0);
   position: relative;
   height: 200px;
-  margin-top: -10px;
+  margin-top: 13px;
   clear: both;
   display: flex;
   justify-content: space-around;
@@ -142,14 +143,11 @@ nav {
   width: 80%;
   border: 10px solid rgb(225,6,0);
   border-radius: 5px;
-  margin-left: 50px;
+  margin-left: 10%;
   margin-bottom: 15px;
   margin-top: 15px;
   display: flex;
   flex-direction: column;
-}
-.test-image {
- margin-left: 120px; 
 }
 
 .leader-stats p {
@@ -175,3 +173,30 @@ nav {
   font-size: larger;
 }
 
+.constructors-image {
+  margin-left:  10%;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+
+.driver-image {
+  margin-top: 30px;
+  margin-left: 23%;
+  margin-bottom: 30px;
+  width: 500px;
+  height: auto;
+}
+
+.constructor-results li {
+  margin: 4%;
+}
+.track-image {
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.schedule-list li {
+  font-size: 19px;
+}
