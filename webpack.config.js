@@ -29,6 +29,11 @@ module.exports = {
       template: 'src/schedule.html',
       chunks: ['main']
     }),
+    new HtmlWebpackPlugin({
+      filename: 'FAQ.html',
+      template: 'src/FAQ.html',
+      chunks: ['main']
+    }),
     new Dotenv()
   ],
   module: {
