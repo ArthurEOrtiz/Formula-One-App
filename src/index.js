@@ -20,6 +20,11 @@ $(document).ready(function(){
 
       $("#driverStandings").html(driverStandingsHTML);
 
+      $("#leader-stats").html(`<h3>${driverStandingsArray[0].Driver.givenName} ${driverStandingsArray[0].Driver.familyName}</h3>
+      <p>#${driverStandingsArray[0].Driver.permanentNumber}</p>
+      <p>${driverStandingsArray[0].Constructors[0].name}</p>
+      <p>Points: ${driverStandingsArray[0].points} Wins: ${driverStandingsArray[0].wins}</p>`);
+
     });
 
   Formula1ConstrucorStats.getConstrutorStats() 
@@ -34,6 +39,7 @@ $(document).ready(function(){
       }
 
       $("#constructorStandings").html(constructorStandingsHTML);
+      $("#constructor-leader-stats").html(`<h3>${constructorStandingArray[0].Constructor.name}</h3><p>Wins: ${constructorStandingArray[0].wins} Points: ${constructorStandingArray[0].points}</p>`);
 
     });
 
@@ -45,6 +51,30 @@ $(document).ready(function(){
       const nextRoundHTML = `<p>${nextRound.Circuit.circuitName}</p> <p>${nextRound.date}</p> <p>${nextRound.time}</p>`;
       
       $("#nextRound").html(nextRoundHTML);
-      console.log(nextRoundHTML);
+
+      
+      let year = [];
+      let month = [];
+      let date = [];
+
+      for (let i=0; i <= 3; i++) {
+        year.push(parseInt(nextRound.date[i]));
+      }
+
+      for (let i=5; i<=6; i++) {
+        month.push(parseInt(nextRound.date[i]));
+      }
+
+      for (let i=8; i<=9; i++) {
+        date += parseInt(nextRound.date[i]);
+      }
+
+      // const nextRoundDate = year.concat(month, date);
+      // console.log(nextRoundDate);
+
+      console.log(year);
+      console.log(month);
+      console.log(date);
+
     });
 });
