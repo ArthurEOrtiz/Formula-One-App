@@ -51,5 +51,30 @@ $(document).ready(function(){
       const nextRoundHTML = `<p>${nextRound.Circuit.circuitName}</p> <p>${nextRound.date}</p> <p>${nextRound.time}</p>`;
       
       $("#nextRound").html(nextRoundHTML);
+
+      
+      let year = [];
+      let month = [];
+      let date = [];
+
+      for (let i=0; i <= 3; i++) {
+        year.push(parseInt(nextRound.date[i]));
+      }
+
+      for (let i=5; i<=6; i++) {
+        month.push(parseInt(nextRound.date[i]));
+      }
+
+      for (let i=8; i<=9; i++) {
+        date += parseInt(nextRound.date[i]);
+      }
+
+      // const nextRoundDate = year.concat(month, date);
+      // console.log(nextRoundDate);
+
+      console.log(year);
+      console.log(month);
+      console.log(date);
+
     });
 });
