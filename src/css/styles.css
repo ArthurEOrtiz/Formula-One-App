@@ -188,7 +188,7 @@ nav {
 }
 
 .constructor-results li {
-  margin: 4%;
+  margin: 8%;
 }
 .track-image {
   width: 90%;
@@ -199,4 +199,8 @@ nav {
 
 .schedule-list li {
   font-size: 19px;
+}
+
+.constructorStandings {
+  margin: 10px;
 }
