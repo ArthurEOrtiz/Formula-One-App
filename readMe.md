@@ -1,4 +1,4 @@
-# 🏎️FORMULA 1 SEASON TRACKER🏎️
+# 🏎️FORMULA 1&trade; SEASON TRACKER🏎️
 _By Arthur Edward Ortiz, Sean Keane, Timothy Gibson, Brad Buchholz_
 
 [![Drivers.jpg](https://i.postimg.cc/pX3tfXNW/Drivers.jpg)](https://postimg.cc/qzcY0rMS)

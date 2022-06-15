@@ -48,33 +48,13 @@ $(document).ready(function(){
       const nextRoundObject = response;
       sessionStorage.setItem("nextRoundObject", JSON.stringify(nextRoundObject));
       const nextRound = JSON.parse(sessionStorage.getItem("nextRoundObject")).MRData.RaceTable.Races[0];
-      const nextRoundHTML = `<p>${nextRound.Circuit.circuitName}</p> <p>${nextRound.date}</p> <p>${nextRound.time}</p>`;
+      const date = nextRound.date;
+      const time = nextRound.time;
+      const dateTime = `${date} ${time}`
+      const nextRoundDate = new Date(dateTime);
+      const nextRoundHTML = `<p>${nextRound.Circuit.circuitName}</p> <p>${nextRoundDate.toDateString()}</p> <p>${nextRoundDate.toLocaleTimeString('en-US')}</p>`;
       
       $("#nextRound").html(nextRoundHTML);
-
       
-      let year = [];
-      let month = [];
-      let date = [];
-
-      for (let i=0; i <= 3; i++) {
-        year += nextRound.date[i];
-      }
-
-      for (let i=5; i<=6; i++) {
-        month += nextRound.date[i];
-      }
-
-      for (let i=8; i<=9; i++) {
-        date += nextRound.date[i];
-      }
-
-      const nextRoundDate = [parseInt(year), parseInt(month)-1, parseInt(date)];
-      // console.log(nextRoundDate);
-
-      console.log(nextRoundDate);
-
-
-
     });
 });
