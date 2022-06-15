@@ -58,23 +58,23 @@ $(document).ready(function(){
       let date = [];
 
       for (let i=0; i <= 3; i++) {
-        year.push(parseInt(nextRound.date[i]));
+        year += nextRound.date[i];
       }
 
       for (let i=5; i<=6; i++) {
-        month.push(parseInt(nextRound.date[i]));
+        month += nextRound.date[i];
       }
 
       for (let i=8; i<=9; i++) {
-        date += parseInt(nextRound.date[i]);
+        date += nextRound.date[i];
       }
 
-      // const nextRoundDate = year.concat(month, date);
+      const nextRoundDate = [parseInt(year), parseInt(month)-1, parseInt(date)];
       // console.log(nextRoundDate);
 
-      console.log(year);
-      console.log(month);
-      console.log(date);
+      console.log(nextRoundDate);
+
+
 
     });
 });
