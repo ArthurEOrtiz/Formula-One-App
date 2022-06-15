@@ -362,5 +362,12 @@ nav {
  font-size: 40px;
 }
 
+.constructor-leader-stats {
+  margin-left: 25%;
+  margin-top: 8%;
+  font-size:larger;
+  font-weight:bolder;
+}
+
 
 
