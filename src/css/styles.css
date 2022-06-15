@@ -221,6 +221,11 @@ nav {
   margin: 10px;
 }
 
+.link-to-repo {
+  font-size: larger;
+  margin: 10px;
+}
+
 .about-header {
   margin-top: 50px;
 }
