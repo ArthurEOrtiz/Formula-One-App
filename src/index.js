@@ -20,6 +20,11 @@ $(document).ready(function(){
 
       $("#driverStandings").html(driverStandingsHTML);
 
+      $("#leader-stats").html(`<h3>${driverStandingsArray[0].Driver.givenName} ${driverStandingsArray[0].Driver.familyName}</h3>
+      <p>#${driverStandingsArray[0].Driver.permanentNumber}</p>
+      <p>${driverStandingsArray[0].Constructors[0].name}</p>
+      <p>Points: ${driverStandingsArray[0].points} Wins: ${driverStandingsArray[0].wins}</p>`);
+
     });
 
   Formula1ConstrucorStats.getConstrutorStats() 
@@ -34,7 +39,22 @@ $(document).ready(function(){
       }
 
       $("#constructorStandings").html(constructorStandingsHTML);
-      console.log(constructorStandingsHTML);
+      $("#constructor-leader-stats").html(`<h3>${constructorStandingArray[0].Constructor.name}</h3><p>Wins: ${constructorStandingArray[0].wins} Points: ${constructorStandingArray[0].points}</p>`);
 
+    });
+
+  Schedule.getNextRound()
+    .then(function(response){
+      const nextRoundObject = response;
+      sessionStorage.setItem("nextRoundObject", JSON.stringify(nextRoundObject));
+      const nextRound = JSON.parse(sessionStorage.getItem("nextRoundObject")).MRData.RaceTable.Races[0];
+      const date = nextRound.date;
+      const time = nextRound.time;
+      const dateTime = `${date} ${time}`
+      const nextRoundDate = new Date(dateTime);
+      const nextRoundHTML = `<p>${nextRound.Circuit.circuitName}</p> <p>${nextRoundDate.toDateString()}</p> <p>${nextRoundDate.toLocaleTimeString('en-US')}</p>`;
+      
+      $("#nextRound").html(nextRoundHTML);
+      
     });
 });
