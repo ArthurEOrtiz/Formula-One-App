@@ -1,9 +1,10 @@
 # 🏎️FORMULA 1&trade; SEASON TRACKER🏎️
 _By Arthur Edward Ortiz, Sean Keane, Timothy Gibson, Brad Buchholz_
 
-[![Drivers.jpg](https://i.postimg.cc/pX3tfXNW/Drivers.jpg)](https://postimg.cc/qzcY0rMS)
-[![Constructors-Large.jpg](https://i.postimg.cc/htXHhFhk/Constructors-Large.jpg)](https://postimg.cc/9DjxNndb)
-[![Tracks.jpg](https://i.postimg.cc/PJBFwJC0/Tracks.jpg)](https://postimg.cc/N2k4hg7x)
+[![Meet-The-Team.jpg](https://i.postimg.cc/3RH2nbyd/Meet-The-Team.jpg)](https://postimg.cc/94J4fbYh)
+[![Drivers.jpg](https://i.postimg.cc/mr7HzNdR/Drivers.jpg)](https://postimg.cc/kVX4L83h)
+[![Constructors.jpg](https://i.postimg.cc/VvZrQ7N9/Constructors.jpg)](https://postimg.cc/Lgf6j3Lh)
+[![Schedule.jpg](https://i.postimg.cc/V6YdSyrB/Schedule.jpg)](https://postimg.cc/Jy21g2QG)
 
 ## Description
 
